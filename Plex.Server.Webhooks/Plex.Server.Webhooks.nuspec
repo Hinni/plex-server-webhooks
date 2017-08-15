@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Plex.Server.Webhooks</id>
+    <version>1.0.0</version>
+    <authors>Hinni</authors>
+    <projectUrl>https://github.com/Hinni/plex-server-webhooks</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A library to parse event webhooks from Plex server.</description>
+    <releaseNotes>See readme.txt in the package</releaseNotes>
+    <tags>Plex Plex-Media-Server Webhooks</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="5.0.8" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\NuGet_readme.txt" target="readme.txt" />
+  </files>
+</package>
