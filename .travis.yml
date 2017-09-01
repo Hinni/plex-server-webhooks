@@ -2,7 +2,7 @@ language: csharp
 solution: plex-server-webhooks.sln
 install:
   - nuget restore plex-server-webhooks.sln
-  - nuget install xunit.runnner.console -Version 2.2.0 -OutputDirectory testrunner
+  - nuget install xunit.runner.console -Version 2.2.0 -OutputDirectory testrunner
 script:
   - xbuild /p:Configuration=Release plex-server-webhooks.sln
-  - mono ./testrunner/xunit.runnner.console.2.2.0/tools/xunit.console.exe ./Plex.Server.Webhooks.Tests/bin/Release/Plex.Server.Webhooks.Tests.dll
+  - mono ./testrunner/xunit.runner.console.2.2.0/tools/xunit.console.exe ./Plex.Server.Webhooks.Tests/bin/Release/Plex.Server.Webhooks.Tests.dll
