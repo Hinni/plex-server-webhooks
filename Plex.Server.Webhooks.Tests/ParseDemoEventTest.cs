@@ -1,14 +1,13 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.IO;
+﻿using System.IO;
 using Plex.Server.Webhooks.Service;
 using Plex.Server.Webhooks.Events;
+using Xunit;
 
 namespace Plex.Server.Webhooks.Tests
 {
-    [TestClass]
     public class ParseDemoEventTest
     {
-        [TestMethod]
+        [Fact]
         public void ParseEvent()
         {
             // Arrange
@@ -19,8 +18,7 @@ namespace Plex.Server.Webhooks.Tests
             var plexEvent = parser.ParseEvent(payload);
 
             // Assert
-            Assert.IsNotNull(plexEvent);
-            Assert.IsInstanceOfType(plexEvent, typeof(WebhookEventBase));
+            Assert.IsAssignableFrom<WebhookEventBase>(plexEvent);
         }
     }
 }
