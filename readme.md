@@ -1,4 +1,7 @@
-# Plex Server Webhooks [![Build Status](https://travis-ci.org/Hinni/plex-server-webhooks.svg?branch=master)](https://travis-ci.org/Hinni/plex-server-webhooks)
+# Plex Server Webhooks
+[![Build Status](https://travis-ci.org/Hinni/plex-server-webhooks.svg?branch=master)](https://travis-ci.org/Hinni/plex-server-webhooks)
+[![GitHub release](https://img.shields.io/github/release/Hinni/plex-server-webhooks.svg)](https://github.com/Hinni/plex-server-webhooks/releases)
+[![NuGet](https://img.shields.io/nuget/v/Plex.Server.Webhooks.svg)](https://www.nuget.org/packages/Plex.Server.Webhooks/)
 
 A library to parse event webhooks from Plex server.
 

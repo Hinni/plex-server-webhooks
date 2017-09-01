@@ -2,6 +2,7 @@
 using Plex.Server.Webhooks.Service;
 using Plex.Server.Webhooks.Events;
 using Xunit;
+using System;
 
 namespace Plex.Server.Webhooks.Tests
 {
@@ -11,14 +12,15 @@ namespace Plex.Server.Webhooks.Tests
         public void ParseEvent()
         {
             // Arrange
-            var payload = File.ReadAllText(@".\Payloads\MediaPlay.json");
+            var path = Path.Combine(Environment.CurrentDirectory, "Payloads", "MediaPlay.json");
+            var payload = File.ReadAllText(path);
             var parser = new WebhookParser();
 
             // Act
             var plexEvent = parser.ParseEvent(payload);
 
             // Assert
-            Assert.IsAssignableFrom<WebhookEventBase>(plexEvent);
+            Assert.IsType<MediaPlay>(plexEvent);
         }
     }
 }
