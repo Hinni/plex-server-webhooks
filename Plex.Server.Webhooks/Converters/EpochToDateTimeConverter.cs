@@ -15,7 +15,9 @@ namespace Plex.Server.Webhooks.Converters
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
             if (value == null)
+            {
                 return;
+            }
 
             var date = (DateTime)value;
             var diff = date - EpochDate;
