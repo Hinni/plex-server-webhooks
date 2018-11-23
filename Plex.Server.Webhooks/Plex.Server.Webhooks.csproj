@@ -7,7 +7,7 @@
     <Version>2.0.0</Version>
     <Description>A library to parse event webhooks from Plex server.</Description>
     <PackageProjectUrl>https://github.com/Hinni/plex-server-webhooks</PackageProjectUrl>
-    <PackageReleaseNotes>See readme.txt in the package.</PackageReleaseNotes>
+    <PackageReleaseNotes>Switched project to .NET Standard 1.0</PackageReleaseNotes>
     <Copyright>Copyright © 2017-2018 Hinni Solutions</Copyright>
     <PackageLicenseUrl>https://github.com/Hinni/plex-server-webhooks/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl></RepositoryUrl>
