@@ -1,20 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plex.Server.Webhooks", "Plex.Server.Webhooks\Plex.Server.Webhooks.csproj", "{D0FCF33C-6EAE-4C98-9432-988E4EF16A95}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plex.Server.Webhooks.Tests", "Plex.Server.Webhooks.Tests\Plex.Server.Webhooks.Tests.csproj", "{41348B43-BF64-44AF-801D-F2F4940C4F71}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{393F97E6-85EC-4751-971D-C4AF2C743C7D}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		.travis.yml = .travis.yml
-		CreatePackage.ps1 = CreatePackage.ps1
-		NuGet_readme.txt = NuGet_readme.txt
+		LICENSE = LICENSE
 		readme.md = readme.md
-		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plex.Server.Webhooks", "Plex.Server.Webhooks\Plex.Server.Webhooks.csproj", "{2A555898-1357-4175-B2E0-28D7C767900F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plex.Server.Webhooks.Tests", "Plex.Server.Webhooks.Tests\Plex.Server.Webhooks.Tests.csproj", "{019E3641-8A52-407B-A554-7BB0CEEA5229}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,16 +21,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D0FCF33C-6EAE-4C98-9432-988E4EF16A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0FCF33C-6EAE-4C98-9432-988E4EF16A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0FCF33C-6EAE-4C98-9432-988E4EF16A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0FCF33C-6EAE-4C98-9432-988E4EF16A95}.Release|Any CPU.Build.0 = Release|Any CPU
-		{41348B43-BF64-44AF-801D-F2F4940C4F71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41348B43-BF64-44AF-801D-F2F4940C4F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41348B43-BF64-44AF-801D-F2F4940C4F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41348B43-BF64-44AF-801D-F2F4940C4F71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A555898-1357-4175-B2E0-28D7C767900F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A555898-1357-4175-B2E0-28D7C767900F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A555898-1357-4175-B2E0-28D7C767900F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A555898-1357-4175-B2E0-28D7C767900F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019E3641-8A52-407B-A554-7BB0CEEA5229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019E3641-8A52-407B-A554-7BB0CEEA5229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019E3641-8A52-407B-A554-7BB0CEEA5229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019E3641-8A52-407B-A554-7BB0CEEA5229}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E40A0AF-A359-4FD2-BB83-8B366A4F9514}
 	EndGlobalSection
 EndGlobal

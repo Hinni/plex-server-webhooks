@@ -1,8 +1,8 @@
-﻿using System.IO;
+﻿using Plex.Server.Webhooks.Events;
 using Plex.Server.Webhooks.Service;
-using Plex.Server.Webhooks.Events;
-using Xunit;
 using System;
+using System.IO;
+using Xunit;
 
 namespace Plex.Server.Webhooks.Tests
 {

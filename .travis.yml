@@ -1,8 +1,20 @@
 language: csharp
-solution: plex-server-webhooks.sln
+sudo: false
+dist: trusty
+env:
+  global:
+    # We want to build our product in Release configuration
+    - CONFIGURATION=Release
+    # Set the DOTNET_SKIP_FIRST_TIME_EXPERIENCE environment variable to stop wasting time caching packages
+    - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
+    # Disable sending usage data to Microsoft
+    - DOTNET_CLI_TELEMETRY_OPTOUT=1
+    # Skip xml docs for packages
+    - NUGET_XMLDOC_MODE=skip
+mono: none
+dotnet: 2.1
 install:
-  - nuget restore plex-server-webhooks.sln
-  - nuget install xunit.runner.console -Version 2.2.0 -OutputDirectory testrunner
+  - dotnet restore
 script:
-  - xbuild /p:Configuration=Release plex-server-webhooks.sln
-  - mono ./testrunner/xunit.runner.console.2.2.0/tools/xunit.console.exe ./Plex.Server.Webhooks.Tests/bin/Release/Plex.Server.Webhooks.Tests.dll
+  - dotnet build ./Plex.Server.Webhooks/
+  - dotnet test ./Plex.Server.Webhooks.Tests/

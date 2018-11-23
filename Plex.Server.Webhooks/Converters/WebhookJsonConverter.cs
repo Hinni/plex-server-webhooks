@@ -32,7 +32,9 @@ namespace Plex.Server.Webhooks.Converters
             jsonObject.TryGetValue("event", StringComparison.CurrentCultureIgnoreCase, out eventName);
 
             if (!TypeMapping.ContainsKey(eventName.ToString()))
+            {
                 throw new NotImplementedException(string.Format("Event {0} is not implemented yet.", eventName));
+            }
 
             Type type = TypeMapping[eventName.ToString()];
             WebhookEventBase webhookItem = (WebhookEventBase)jsonObject.ToObject(type, serializer);
