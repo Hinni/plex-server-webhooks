@@ -1,8 +1,7 @@
 language: csharp
-solution: plex-server-webhooks.sln
-install:
-  - nuget restore plex-server-webhooks.sln
-  - nuget install xunit.runner.console -Version 2.2.0 -OutputDirectory testrunner
+mono: none
+dotnet: 2.1.0
 script:
-  - xbuild /p:Configuration=Release plex-server-webhooks.sln
-  - mono ./testrunner/xunit.runner.console.2.2.0/tools/xunit.console.exe ./Plex.Server.Webhooks.Tests/bin/Release/Plex.Server.Webhooks.Tests.dll
+  - dotnet restore
+  - dotnet build ./Plex.Server.Webhooks/
+  - dotnet test ./Plex.Server.Webhooks.Tests/
