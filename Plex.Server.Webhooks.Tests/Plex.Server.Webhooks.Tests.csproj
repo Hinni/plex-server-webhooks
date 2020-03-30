@@ -2,22 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-
     <IsPackable>false</IsPackable>
-
     <Authors>Hinni</Authors>
-
     <Company>Hinni Solutions</Company>
-
-    <Copyright>Copyright © 2017-2018 Hinni Solutions</Copyright>
-
+    <Copyright>Copyright © 2017-2020 Hinni Solutions</Copyright>
     <PackageLicenseUrl></PackageLicenseUrl>
-
     <PackageProjectUrl>https://github.com/Hinni/plex-server-webhooks</PackageProjectUrl>
-
     <PackageTags>Plex MediaServer Webhooks Tests</PackageTags>
-
-    <Version>2.0.0</Version>
+    <Version>2.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
