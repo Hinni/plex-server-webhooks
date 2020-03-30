@@ -4,13 +4,15 @@
 [![GitHub release](https://img.shields.io/github/release/Hinni/plex-server-webhooks.svg)](https://github.com/Hinni/plex-server-webhooks/releases)
 [![NuGet](https://img.shields.io/nuget/v/Plex.Server.Webhooks.svg)](https://www.nuget.org/packages/Plex.Server.Webhooks/)
 
-A library to parse event webhooks from Plex server.
+A library to parse event webhooks from Plex Media Server.
 
 ## Download via NuGet
 
 Install Plex.Server.Webhooks via NuGet package manager (nuget.org)
 
-    Install-Package Plex.Server.Webhooks
+```cmd
+Install-Package Plex.Server.Webhooks
+```
 
 ## Usage
 
@@ -24,7 +26,7 @@ var events = parser.ParseEvent(json);
 ## Plex Webhook Documentation
 
 Check out the documentation on Plex:
-https://support.plex.tv/hc/en-us/articles/115002267687-Webhooks
+[Webhooks on Plex Support](https://support.plex.tv/articles/115002267687-webhooks/)
 
 ## Thanks
 
