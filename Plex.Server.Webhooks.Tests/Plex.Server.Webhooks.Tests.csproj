@@ -5,7 +5,7 @@
     <IsPackable>false</IsPackable>
     <Authors>Hinni</Authors>
     <Company>Hinni Solutions</Company>
-    <Copyright>Copyright © 2017-2020 Hinni Solutions</Copyright>
+    <Copyright>Copyright © 2017-2021 Hinni Solutions</Copyright>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Hinni/plex-server-webhooks</PackageProjectUrl>
     <PackageTags>Plex MediaServer Webhooks Tests</PackageTags>
