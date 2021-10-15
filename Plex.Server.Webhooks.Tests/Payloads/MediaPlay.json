@@ -1,5 +1,5 @@
 ﻿{
-  "event": "media.pblay",
+  "event": "media.play",
   "user": true,
   "owner": true,
   "Account": {
