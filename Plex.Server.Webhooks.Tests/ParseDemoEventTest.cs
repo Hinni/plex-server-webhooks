@@ -14,13 +14,12 @@ namespace Plex.Server.Webhooks.Tests
             // Arrange
             var path = Path.Combine(Environment.CurrentDirectory, "Payloads", "MediaPlay.json");
             var payload = File.ReadAllText(path);
-            var parser = new WebhookParser();
 
             // Act
-            var plexEvent = parser.ParseEvent(payload);
+            var plexEvent = PlexWebhookParser.ParseEvent(payload);
 
             // Assert
-            Assert.IsType<MediaPlay>(plexEvent);
+            Assert.IsType<PlexWebhookEvent>(plexEvent);
         }
     }
 }

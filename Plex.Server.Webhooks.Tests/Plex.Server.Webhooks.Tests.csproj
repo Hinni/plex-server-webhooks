@@ -1,29 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-
+    <TargetFramework>net5.0</TargetFramework>
     <IsPackable>false</IsPackable>
-
     <Authors>Hinni</Authors>
-
     <Company>Hinni Solutions</Company>
-
-    <Copyright>Copyright © 2017-2018 Hinni Solutions</Copyright>
-
+    <Copyright>Copyright © 2017-2021 Hinni Solutions</Copyright>
     <PackageLicenseUrl></PackageLicenseUrl>
-
     <PackageProjectUrl>https://github.com/Hinni/plex-server-webhooks</PackageProjectUrl>
-
     <PackageTags>Plex MediaServer Webhooks Tests</PackageTags>
-
-    <Version>2.0.0</Version>
+    <Version>2.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
-    <PackageReference Include="xunit" Version="2.4.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
